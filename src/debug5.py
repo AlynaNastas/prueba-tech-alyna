@@ -8,8 +8,12 @@ def load_items(path):
     return data["items_list"]
 
 def mean(nums):
+    if len(nums) == 0:  # Comprobamos que la lista no esté vacía, para que no dividamos entre cero.
+        print("Error: La lista está vacía") # Mostramos el error por consola.
+        sys.exit(1) # Empleamos el código estándar de error para la salida de la función.
     total = sum(nums)
     return total / len(nums)
+
 
 def scale(values):
     m = mean(values)
