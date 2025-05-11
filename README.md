@@ -100,3 +100,31 @@ Repositorio con los ejercicios de la prueba. Sigue las instrucciones de la descr
 * Claridad en la documentación y README.
 
 ---
+
+## Cómo ejecutar el script de parafraseo
+
+Este script usa la API de OpenAI para parafrasear un texto en español que se encuentra en el archivo `input.txt`. El resultado se muestra por consola.
+
+### Requisitos
+
+- Python 3.10 o superior
+- Clave de API de OpenAI (guardada en un archivo `.env`)
+- Instalar dependencias con pip:
+
+```bash
+pip install -r requirements.txt
+```
+
+### API KEY
+
+- El archivo .env debe contener la clave en este formato:
+
+OPENAI_API_KEY=sk-...
+
+### USO
+
+Ejecuta el siguiente comando desde la raíz del proyecto:
+
+```bash
+python src/paraphrase.py input.txt
+```
